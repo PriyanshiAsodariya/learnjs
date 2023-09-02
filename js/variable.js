@@ -1,22 +1,16 @@
-    // var  firstname = "priyanshi";
-    // var firstname = "sanjana";
+// var x = 10;
+// var x = 20;
+// console.log(x);   //20;
 
-    // document.write("my first name is ");
+// var x;
+// console.log(x);  //undefined;
 
-    // document.write(firstname);
+// var x = 10;
+// var x;
+// console.log(x);   //10;
 
-
-    // var sum = 2 + 2;
-
-    // document.write(sum);
-
-
-    var firstname, lastname,age;
-
-    firstname = "priyanshi";
-    lastname = "asodariya";
-    age = 20;
-
-    document.write(firstname);
-    document.write(lastname);
-    document.write(age);
+var x = 10;
+{
+    var x = 20;
+}
+console.log(x);  //20;
