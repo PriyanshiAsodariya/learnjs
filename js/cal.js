@@ -6,8 +6,6 @@ let op = (prompt("enter operator"));
 
 console.log(x,y,op);
 
-
-
 switch(op){
     case '+':
         x = x + y;
