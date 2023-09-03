@@ -9,13 +9,13 @@ function handlesubmit(){
 
     total = m + m1 + m2 ;
 
-    console.log(total);
+    console.log("total marks is:",total);
 
     let per;
 
     per = total/3;
 
-    console.log(per);
+    console.log("per is:",per);
 
     if(per>80){
         console.log("grade A");
