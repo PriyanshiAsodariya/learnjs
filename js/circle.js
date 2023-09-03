@@ -1,7 +1,7 @@
 function handlesubmit(){
-    console.log("ok");
+    // console.log("ok");
 
-    let r = parsefloat(document.getElementById("radius").value);
+    let r = parseFloat(document.getElementById("radius").value);
 
     let area;
 
