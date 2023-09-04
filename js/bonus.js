@@ -4,7 +4,7 @@ function handlesubmit(){
     let salary = parseInt(document.getElementById("employee1").value);
     
     console.log("total salary:",salary);
-    console.log("total salary:",salary1);
+    
     let bonus;
 
     
