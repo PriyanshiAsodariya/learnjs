@@ -5,11 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="js/tax.js"></script>
+    <link rel="stylesheet" href="css/tax.css">
 </head>
 <body>
     <form action="#"onsubmit="handlesubmit()">
         <input type="text" name="salary" id="salary" placeholder="enter your salary"><br><br>
-        <input type="submit">
+        <input type="submit"><br><br>
     </form>
+    <table border="1">
+    <tr id="deco">
+        <th>income tax slab</th>
+        <th>income tax rate</th>
+        <th>actual tax</th>
+    </tr>
+    <tr>
+        <td>upto 3 lakh</td>
+        <td>nill</td>
+        <td id="slab-1"></td>
+    </tr>
+    <tr>
+        <td>3 lakh to 6lakh</td>
+        <td>5%</td>
+        <td id="slab-2"></td>
+    </tr>
+    <tr>
+        <td>6 lakh to 9 lakh</td>
+        <td>10%</td>
+        <td id="slab-3"></td>
+    </tr>
+    <tr>
+        <td>9 lakh to 12 lakh</td>
+        <td>15%</td>
+        <td id="slab-4"></td>
+    </tr>
+    <tr>
+        <td>12 lakh to 15 lakh </td>
+        <td>20%</td>
+        <td id="slab-5"></td>
+    </tr>
+    <tr>
+        <td>above 15 lakh</td>
+        <td>30%</td>
+        <td id="slab-6"></td>
+    </tr>
+</table>
+<p>total tax: <span id="total"></span></p>
+
+   
+
 </body>
-</html>
+</html>7
