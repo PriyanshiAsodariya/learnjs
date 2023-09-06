@@ -1,33 +1,28 @@
+let x = Math.floor(Math.random()*10);
+let y = Math.floor(Math.random()*10);
+console.log(x,y);
+
+document.getElementById("box1").innerHTML=x;
+document.getElementById("box2").innerHTML=y;
+console.log(x,y);
+
+let  correctans = x + y;
+console.log(correctans); 
+
+
+
 function handlesubmit(){
 
     event.preventDefault();
-    // console.log("ok");
+
+    let userans=parseInt(document.getElementById("ans").value);
+
+    if(correctans == userans ){
+        alert("ans is correct");
+    }else{
+        alert("incorrect ans.correct ans is:"+correctans);
+    }
     
-    let x = Math.floor(Math.random()*10);
-    
-    // console.log(x);
-
-    document.getElementById("box1").innerHTML=x;
-
-    
-   let y = Math.floor(Math.random()*10);
-   let total;
-   total = x + y;
-   
-      
-    //  Math.random()*10;
-
-    // console.log(y);
-
-    document.getElementById("box2").innerHTML=y;
-
-//    if(total){
-//     alert("ans is correct");
-//    }else{
-//     alert("ans is incorrect");
-//    }
-
-
     
       
 }
