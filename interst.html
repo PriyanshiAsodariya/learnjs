@@ -6,23 +6,28 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="" onsubmit="handlesubmit()">
-        <input type="number" name="principle" id="principal" placeholder="principle">
+    <div id="mainbox">
+        <h1 id="heading">Intrest Calaculate</h1>
         <br><br>
-        <input type="number" name="rate" id="rate" placeholder="rate">
-        <br><br>
-        <input type="number" name="time" id="time" placeholder="time">
-        <br><br>
-        <select name="select" id="select">
-            <option value="0">--select--</option>
-            <option value="year">year</option>
-            <option value="month">month</option>
-        </select>
-        <br><br>
-        <input type="submit">
-        
-        <p>result is: <span id="result"></span></p>
-    </form>
+        <form action="" onsubmit="handlesubmit()">
+            <input type="number" name="principle" id="principal" placeholder="principle">
+            <br><br>
+            <input type="number" name="rate" id="rate" placeholder="rate">
+            <br><br>
+            <input type="number" name="time" id="time" placeholder="time">
+            <br><br>
+            <select name="select" id="select">
+                <option value="0">--select--</option>
+                <option value="year">year</option>
+                <option value="month">month</option>
+            </select>
+            <br><br>
+            <input  id="submit" type="submit">
+            <br><br>
+            <p>result is: <span id="result"></span></p>
+        </form>
+    </div>
     <script src="js/interst.js"></script>
+    <link rel="stylesheet" href="css/interst.css">
 </body>
 </html>
