@@ -8,16 +8,16 @@ function handlesubmit(){
     console.log(rate);
     let time = document.getElementById("time").value;
     console.log(time);
-    let select = documet.getElementById("time").value;
-    console.log(hjkk);
+    let select = document.getElementById("select").value;
+    console.log(select);
 
 
-    document.getElementById("principal").innerhtml = principal;
-    document.getElementById("rate").innerhtml = rate;
-    document.getElementById("time").innerhtml = time;
+    document.getElementById("principal").innerHTML = principal;
+    document.getElementById("rate").innerHTML = rate;
+    document.getElementById("time").innerHTML = time;
 
 
-    let  ans;
+    let ans;
     if(select === 'year'){
         ans = ( principal * rate * time) /100;
         console.log(ans);
@@ -25,4 +25,5 @@ function handlesubmit(){
         ans = (principal * rate * time) /1200;
         console.log(ans);
     }
+    document.getElementById("result").innerHTML = ans;
 }
