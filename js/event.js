@@ -2,15 +2,15 @@
 
 function image1(){
     document.getElementById("birds").value;
-    alert("event activated");
+    alert("first image");
 }
 function image2(){
     document.getElementById("books").value;
-    alert("hello world");
+    alert("second image");
 }
 function image3(){
     document.getElementById("dog").value;
-    alert("okkkkk");
+    alert("third image");
 }
 
 // window event:
