@@ -12,9 +12,9 @@ function handlesubmit(){
     console.log(select);
 
 
-    document.getElementById("principal").innerHTML = principal;
-    document.getElementById("rate").innerHTML = rate;
-    document.getElementById("time").innerHTML = time;
+    // document.getElementById("principal").innerHTML = principal;
+    // document.getElementById("rate").innerHTML = rate;
+    // document.getElementById("time").innerHTML = time;
 
 
     let ans;
