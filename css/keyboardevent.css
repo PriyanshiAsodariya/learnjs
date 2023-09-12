@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(../image/04.jpeg);
+    background-size: cover;
+
+}
+
+#form{
+    width: 300px;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 100px;
+    border: 2px solid;
+    border-radius: 25px;
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+}
+input{
+    padding: 4px;
+    border-radius: 15px;
+}

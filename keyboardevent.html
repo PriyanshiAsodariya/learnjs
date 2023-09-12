@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="form">
+        
+        <h1>Keyboard Event</h1>
+        <br><br>
+        <p>onkeydown</p>
+        <input type="text" onkeydown="document.getElementById('form').style.background=this.value">
+        <br><br>
+        <p>onkeyup</p>
+        <input type="text" onkeyup="document.getElementById('form').style.background=this.value">
+        
+    </div>
+
+    
+    <script src="js/keyboardevent.js"></script>
+    <link rel="stylesheet" href="css/keyboardevent.css">
+</body>
+</html>
