@@ -1,16 +1,39 @@
 // mouse event:
 
-function image1(){
+function handleonclick(){
     document.getElementById("birds").value;
     alert("first image");
 }
-function image2(){
+function handleondblclick(){
     document.getElementById("books").value;
     alert("second image");
 }
-function image3(){
+function handleonmouseover(){
     document.getElementById("dog").value;
     alert("third image");
+}
+function handleonmousedown(){
+    // console.log("okk");
+    document.getElementById("button").value;
+    alert("clicked button");
+}
+function handleonmouseup(){
+    console.log("pppp");
+    document.getElementById("button").value;
+    alert("mouse up");
+}
+window.onload = function() {
+    // console.log("kkkkk");
+    alert ("window loaded");
+}
+window.onunload = function(){
+    // console.log("okkk");
+}
+function handlefocus(){
+    let x = document.getElementById("name").style.backgroundColor = 'blue';
+}
+function handleblur(){
+    let x = document.getElementById('name').style.backgroundColor = 'white';
 }
 
 // window event:

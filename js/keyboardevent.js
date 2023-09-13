@@ -1,6 +1,7 @@
-// function hello(){
-//     // console.log("okkkk");
+function handleonkeydown(){
+    console.log("okkkk");
+    let form = document.getElementById('form').style.backgroundColor=this.value; 
    
-// }
+}
 
-//     document.getElementById('form').style.background=this.value; 
+   

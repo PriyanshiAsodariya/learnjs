@@ -9,13 +9,19 @@
     <h2>events</h2>
     <div>
         <ul id="images">
-            <li><img width="100px" id="birds" src="image/01.jpeg" alt="image1" onclick="image1()"></li>
-            <li><img width="100px" id="books" src="image/02.jpeg" alt="imges2" ondblclick="image2()"></li>
-            <li><img width="100px" id="dog" src="image/03.jpeg" alt="images3" onmouseover="image3()"></li>
+            <li><img width="100px" id="birds" src="image/01.jpeg" alt="image1" onclick="handleonclick()"></li>
+            <li><img width="100px" id="books" src="image/02.jpeg" alt="imges2" ondblclick="handleondblclick()"></li>
+            <li><img width="100px" id="dog" src="image/03.jpeg" alt="images3" onmouseover="handleonmouseover()"></li>
         </ul>
+
+        <button id="button" onmousedown="handleonmousedown()">click me</button>
+        <br><br>
+        <button  id="button" onmouseup="handleonmouseup()">mouse up</button>
 
         <button onclick="windowopen()">open window</button>
         <button onclick="closewindow()">close window</button>
+        
+        <input type="name" name="name" id="name" placeholder="name" onfocus="handlefocus()" onblur="handleblur()">
     </div>
      <script src="js/event.js"></script>
 </body>
