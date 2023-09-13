@@ -28,12 +28,10 @@ function validateForm(){
             document.getElementById('emailErr').innerHTML = 'plaese enter valid email';
         }
     }
-       
 
     let mobile = document.contactForm.mobile.value;
     // console.log(mobile);
-
-    
+  
     if(mobile === ''){
         document.getElementById('mobileErr').innerHTML = 'plaese enter mo.number';
     }else{
@@ -44,6 +42,15 @@ function validateForm(){
             document.getElementById('mobileErr').innerHTML = 'plaese enter valid email';
         }
         
+    }
+
+    let country = document.getElementById('country').value;
+    // console.log(country);
+
+    if(country === '0'){
+        document.getElementById('countryErr').innerHTML = 'please select any country';
+    }else{
+        document.getElementById('countryErr').innerHTML = '';
     }
 
 
