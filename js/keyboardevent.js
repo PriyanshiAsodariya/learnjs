@@ -1,6 +1,6 @@
-function hello(){
-    // console.log("okkkk");
+// function hello(){
+//     // console.log("okkkk");
    
-}
+// }
 
-    document.getElementById('form').style.background=this.value; 
+//     document.getElementById('form').style.background=this.value; 
