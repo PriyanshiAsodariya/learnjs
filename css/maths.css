@@ -60,6 +60,10 @@ body{
 input{
     margin-top: 20px;
 }
+.error{
+    color: red;
+    font-size: 15px;
+}
 
 
 
