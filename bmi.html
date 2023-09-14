@@ -9,11 +9,11 @@
 </head>
 <body>
     <form action=""onsubmit="handlesubmit()"
-        <div class="box">
-            <p>height in cm:</p>
+        <div class="box">    
+            <p>height in cm:</p><span class="error" id="heightErr"></span>
             <input type="text" id="height" name="height">
 
-            <p>weight in kg:</p>
+            <p>weight in kg:</p><span class="error" id="weightErr"></span>
             <input type="text" id="weight" name="weight">
 
             <button>calculate</button>

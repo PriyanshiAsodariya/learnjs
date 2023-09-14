@@ -40,3 +40,8 @@ p{
     font-size: 20px;
     color: white;
 }
+
+.error{
+    color: red;
+    font-size: 15px;
+}

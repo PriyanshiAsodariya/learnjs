@@ -1,20 +1,36 @@
 function handlesubmit(){
    // console.log("ok");
    event.preventDefault();
-    
-   let h1,w1;
 
    let cm = parseFloat(document.getElementById("height").value);
+   
+   if(cm === ' '){
+      document.getElementById('heightErr').innerHTML = 'please enter height';
+      // console.log(heighterr);
+   }else{
+      if(height>60 && height<300){
+         document.getElementById('heightErr').innerHTML = '';
+      }else{
+         document.getElementById('heightErr').innerHTML = 'please enter valid height';
+      }
+   }
+
+
    let kg = parseFloat(document.getElementById("weight").value);
+   if(kg === ''){
+      document.getElementById('weightErr').innerhtml = 'plaese enter weight';
+   }else{
+      document.getElementById('weightErr').innerHTML = '';
+   }
 
    let bmi,m;
    m = cm/100;
    bmi = kg/(m * m);
-
+   
    console.log(bmi);
 
 
-   let  result = parseFloat(document.getElementById("result").innerHTML=bmi);
+   document.getElementById("result").innerHTML=bmi;
    
    let range;
 
@@ -27,7 +43,9 @@ function handlesubmit(){
    }
    console.log(range);
 
-   document.getElementById("bmi").innerhtml=range;
+   document.getElementById("bmi").innerHTML=range;
+
+   
 
 
    
