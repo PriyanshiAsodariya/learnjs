@@ -5,7 +5,6 @@ function handlesubmit(){
    let cm = document.getElementById("height").value;
    // let height = document.form.height.value;
    console.log(cm);
-   
    if(cm === ''){
       document.getElementById('heightErr').innerHTML = 'please enter height';
    
@@ -21,7 +20,7 @@ function handlesubmit(){
    let kg = document.getElementById("weight").value;
    console.log(kg);
    if(kg === ''){
-      document.getElementById('weightErr').innerHTML = 'plaese enter weight';
+      document.getElementById('weightErr').innerHTML = 'please enter weight';
    }else{
       if(kg>20 && kg<250){
          document.getElementById('weightErr').innerHTML = '';
@@ -29,13 +28,13 @@ function handlesubmit(){
          document.getElementById('weightErr').innerHTML = 'please enter valid weight';
       }
    }
-
    let bmi,m;
-   m = cm/100;
-   bmi = kg/(m * m);
-   
-   console.log(bmi);
-
+   if((cm>60 && cm<300) && (kg>20 && kg<250)){
+      m = cm/100;
+      console.log(m);
+      bmi = kg/(m*m);
+      console.log(bmi);
+   }
 
    document.getElementById("result").innerHTML=bmi;
    
