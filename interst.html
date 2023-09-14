@@ -10,13 +10,13 @@
         <h1 id="heading">Intrest Calaculate</h1>
         <br><br>
         <form action="" onsubmit="handlesubmit()">
-            <input type="number" name="principle" id="principal" placeholder="principle">
+            <input type="number" name="principle" id="principal" placeholder="principle"><span class="error" id="principalErr"></span>
             <br><br>
-            <input type="number" name="rate" id="rate" placeholder="rate">
+            <input type="number" name="rate" id="rate" placeholder="rate"><span class="error" id="rateErr"></span>
             <br><br>
-            <input type="number" name="time" id="time" placeholder="time">
+            <input type="number" name="time" id="time" placeholder="time"><span class="error" id="timeErr"></span>
             <br><br>
-            <select name="select" id="select">
+            <select name="select" id="select"><span class="error" id="selectErr"></span>
                 <option value="0">--select--</option>
                 <option value="year">year</option>
                 <option value="month">month</option>
