@@ -4,17 +4,47 @@ function handlesubmit(){
 
     let principal = document.getElementById("principal").value;
     console.log(principal);
+    if(principal === ''){
+        document.getElementById('principalErr').innerHTML = 'please enter principal';
+    }else{
+        if(principal>=1){
+            document.getElementById('principalErr').innerHTML = ''
+        }else{
+            document.getElementById('principalErr').innerHTML = 'enter valid principal';
+        }
+    }
+
     let rate = document.getElementById("rate").value;
     console.log(rate);
+    if(rate === ''){
+        document.getElementById('rateErr').innerHTML = 'please enter rate';
+    }else{
+        if(rate>0){
+            document.getElementById('rateErr').innerHTML = '';
+        }else{
+            document.getElementById('rateErr').innerHTML = 'please enter valid rate';
+        }
+    }
+
     let time = document.getElementById("time").value;
     console.log(time);
+    if(time === ''){
+        document.getElementById('timeErr').innerHTML = 'please enter time';
+    }else{
+        if(time>=1){
+            document.getElementById('timeErr').innerHTML = '';
+        }
+    }
+
     let select = document.getElementById("select").value;
     console.log(select);
 
-
-    // document.getElementById("principal").innerHTML = principal;
-    // document.getElementById("rate").innerHTML = rate;
-    // document.getElementById("time").innerHTML = time;
+    // if(select === '0'){
+    //     document.getElementById('selectErr').innerHTML = 'please select any time';
+    //     console.log(select);
+    // }else{
+    //     document.getElementById('selectErr').innerHTML = '';
+    // }
 
 
     let ans;
