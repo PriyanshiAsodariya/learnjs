@@ -41,7 +41,7 @@ function handlesubmit(){
 
     // if(select === '0'){
     //     document.getElementById('selectErr').innerHTML = 'please select any time';
-    //     console.log(select);
+    
     // }else{
     //     document.getElementById('selectErr').innerHTML = '';
     // }

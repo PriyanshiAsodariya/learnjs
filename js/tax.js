@@ -20,7 +20,7 @@ function handlesubmit(){
         s1=0;
     }else if(salary<=60000){
         s1 = 0;
-        s2 = (salary=300000)*0.05; 
+        s2 = (salary-300000)*0.05; 
     }else if(salary<=900000){
         s1 = 0;
         s2 = (300000)*0.05; 
