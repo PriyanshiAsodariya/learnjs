@@ -2,8 +2,17 @@ function handlesubmit(){
     event.preventDefault();
     // console.log("ok");
     
-    let salary = parseInt(document.getElementById("salary").value);
+    let salary = document.getElementById("salary").value;
     console.log(salary);
+    if(salary === ''){
+        document.getElementById('salaryErr').innerHTML = 'please enter salary';
+    }else{
+        if(salary>=1){
+            document.getElementById('salaryErr').innerHTML ='';
+        }else{
+            document.getElementById('salaryErr').innerHTML = 'enter valid salary';
+        }
+    }
 
     let s1=0,s2=0,s3=0,s4=0,s5=0,s6=0;
 

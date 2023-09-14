@@ -2,7 +2,7 @@ function handlesubmit(){
    // console.log("ok");
    event.preventDefault();
 
-   let cm = parseFloat(document.getElementById("height").value);
+   let cm = document.getElementById("height").value;
    // let height = document.form.height.value;
    console.log(cm);
    
@@ -18,7 +18,7 @@ function handlesubmit(){
    }
 
 
-   let kg = parseFloat(document.getElementById("weight").value);
+   let kg = document.getElementById("weight").value;
    console.log(kg);
    if(kg === ''){
       document.getElementById('weightErr').innerHTML = 'plaese enter weight';
