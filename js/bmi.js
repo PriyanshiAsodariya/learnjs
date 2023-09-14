@@ -3,12 +3,14 @@ function handlesubmit(){
    event.preventDefault();
 
    let cm = parseFloat(document.getElementById("height").value);
+   // let height = document.form.height.value;
+   console.log(cm);
    
-   if(cm === ' '){
+   if(cm === ''){
       document.getElementById('heightErr').innerHTML = 'please enter height';
       // console.log(heighterr);
    }else{
-      if(height>60 && height<300){
+      if(cm>60 && cm<300){
          document.getElementById('heightErr').innerHTML = '';
       }else{
          document.getElementById('heightErr').innerHTML = 'please enter valid height';
@@ -17,10 +19,15 @@ function handlesubmit(){
 
 
    let kg = parseFloat(document.getElementById("weight").value);
+   console.log(kg);
    if(kg === ''){
-      document.getElementById('weightErr').innerhtml = 'plaese enter weight';
+      document.getElementById('weightErr').innerHTML = 'plaese enter weight';
    }else{
-      document.getElementById('weightErr').innerHTML = '';
+      if(kg>20 && kg<250){
+         document.getElementById('weightErr').innerHTML = '';
+      }else{
+         document.getElementById('weightErr').innerHTML = 'please enter valid weight';
+      }
    }
 
    let bmi,m;
