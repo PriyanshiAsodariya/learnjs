@@ -33,6 +33,8 @@ function handlesubmit(){
     }else{
         if(time>=1){
             document.getElementById('timeErr').innerHTML = '';
+        }else{
+            document.getElementById('timeErr').innerHTML = 'enter valid time';
         }
     }
 

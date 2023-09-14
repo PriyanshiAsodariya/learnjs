@@ -16,7 +16,14 @@ function handlesubmit(){
 
     let userans=parseInt(document.getElementById("ans").value);
 
-    if(correctans == userans ){
+    let ans = document.getElementById('ans').value;
+    if(ans === ''){
+        document.getElementById('ansErr').innerHTML = 'please enter ans'
+    }else{
+        document.getElementById('ansErr').innerHTML ='';
+    }
+
+    if(correctans == userans){
         alert("ans is correct");
     }else{
         alert("incorrect ans.correct ans is:"+correctans);
