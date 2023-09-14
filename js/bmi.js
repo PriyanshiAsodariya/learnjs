@@ -8,7 +8,7 @@ function handlesubmit(){
    
    if(cm === ''){
       document.getElementById('heightErr').innerHTML = 'please enter height';
-      // console.log(heighterr);
+   
    }else{
       if(cm>60 && cm<300){
          document.getElementById('heightErr').innerHTML = '';
