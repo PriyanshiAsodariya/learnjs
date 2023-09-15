@@ -73,14 +73,12 @@ function validateForm(){
     let flag;
     for(let i=0; i<hobby.length; i++){
         console.log(hobby[i].value,hobby[i].checked);
-        
-        
+          
         if(hobby[i].checked){
             flag = true;
             break;
         }
     }
-
     if(flag){
         document.getElementById('hobbyErr').innerHTML = '';
         hobbyE = false;
