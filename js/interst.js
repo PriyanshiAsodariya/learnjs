@@ -1,41 +1,41 @@
 function handlesubmit(){
-    event.preventDefault();
+    // event.preventDefault();
     // console.log("okk");
 
     let principal = document.getElementById("principal").value;
     console.log(principal);
-    if(principal === ''){
-        document.getElementById('principalErr').innerHTML = 'please enter principal';
-    }else{
+    if(principal){
         if(principal>=1){
             document.getElementById('principalErr').innerHTML = ''
         }else{
             document.getElementById('principalErr').innerHTML = 'enter valid principal';
         }
+    }else{
+        document.getElementById('principalErr').innerHTML = 'please enter principal'
     }
 
     let rate = document.getElementById("rate").value;
     console.log(rate);
-    if(rate === ''){
-        document.getElementById('rateErr').innerHTML = 'please enter rate';
-    }else{
+    if(rate){
         if(rate>0){
             document.getElementById('rateErr').innerHTML = '';
         }else{
             document.getElementById('rateErr').innerHTML = 'please enter valid rate';
         }
+    }else{
+        document.getElementById('rateErr').innerHTML = 'enter rate'
     }
 
     let time = document.getElementById("time").value;
     console.log(time);
-    if(time === ''){
-        document.getElementById('timeErr').innerHTML = 'please enter time';
-    }else{
+    if(time){
         if(time>=1){
             document.getElementById('timeErr').innerHTML = '';
         }else{
             document.getElementById('timeErr').innerHTML = 'enter valid time';
-        }
+        } 
+    }else{
+        document.getElementById('timeErr').innerHTML = 'please enter time';
     }
 
     let select = document.getElementById("select").value;

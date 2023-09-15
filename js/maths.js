@@ -11,24 +11,21 @@ let  correctans = x + y;
 console.log(correctans); 
 
 function handlesubmit(){
-
-    event.preventDefault();
-
+   
     let userans=parseInt(document.getElementById("ans").value);
-
-    let ans = document.getElementById('ans').value;
-    if(ans === ''){
-        document.getElementById('ansErr').innerHTML = 'please enter ans'
+    if(userans){
+        if(correctans == userans){
+            alert("ans is correct");
+        }else{
+            alert("incorrect ans.correct ans is:"+correctans);
+        }
+        
+        document.getElementById('ansErr').innerHTML = ''
+        
     }else{
-        document.getElementById('ansErr').innerHTML ='';
+        document.getElementById('ansErr').innerHTML ='please enter ans';
     }
 
-    if(correctans == userans){
-        alert("ans is correct");
-    }else{
-        alert("incorrect ans.correct ans is:"+correctans);
-    }
-    
-    
+    return false;
       
 }
