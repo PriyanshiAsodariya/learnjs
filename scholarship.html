@@ -7,18 +7,23 @@
     <script src="js/scholarship.js"></script>
 </head>
 <body>
-    <form action="#"onsubmit="handlesubmit()">
+    <form action="#"onsubmit=" return handlesubmit()">
         cast:
-        <select name="cast" id="cast">
+        <select name="cast" id="cast"><span id="castErr"></span>
             <option value="0">---select---</option>
             <option value="o">OPEN</option>
             <option value="ob">OBC</option>
             <option value="sc">SC</option>
             <option value="st">ST</option>
         </select><br><br>
-        <input type="text" name="cgpa" id="cgpa" placeholder="enter CGPA"><br><br>
-        <input type="text" name="fees" id="fees" placeholder="enter your fees"><br><br>
+        <input type="text" name="cgpa" id="cgpa" placeholder="enter CGPA"><span id="cgpaErr"></span>
+        <br><br>
+        <input type="text" name="fees" id="fees" placeholder="enter your fees"><span id="feesErr"></span>
+        <br><br>
         <input type="submit">
+
+        <p>scholarship is:<span id="ans"></span></p>
+        <p>grade is: <span id="grade"></span> </p>
     </form>
 </body>
 </html>
