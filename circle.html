@@ -7,9 +7,12 @@
     <script src="js/circle.js"></script>
 </head>
 <body>
-    <form action="" onsubmit = "handlesubmit()">
-        <input type="text" name="radius" id="radius" placeholder="enter radius">
+    <form action="" onsubmit = "return handlesubmit()">
+        <input type="text" name="radius" id="radius" placeholder="enter radius"><span id="error"></span>
+        <br><br>
         <input type="submit">
+
+        <p>ans is: <span id="ans"></span></p>
     </form>
 </body>
 </html>
