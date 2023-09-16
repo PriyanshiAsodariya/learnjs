@@ -7,11 +7,16 @@
     <script src="js/marks.js"></script>
 </head>
 <body>
-    <form action="" onsubmit = "handlesubmit()">
-        <input type="text" name="marks" id="marks" placeholder="enter marks">
-        <input type="text" name="marks" id="marks1" placeholder="enter marks">
-        <input type="text" name="marks" id="marks2" placeholder="enter marks">
+    <form action="" onsubmit = " return handlesubmit()">
+        <input type="text" name="marks" id="marks" placeholder="enter  maths marks"><span id="mErr"></span>
+        <br><br>
+        <input type="text" name="marks" id="marks1" placeholder="enter science marks"><span id="m1Err"></span>
+        <br><br>
+        <input type="text" name="marks" id="marks2" placeholder="enter chemstry marks"><span id="m2Err"></span>
+        <br><br>
         <input type="submit">
+
+        <p>garde is: <span id="ans"></span></p>
     </form>
 </body>
 </html>
