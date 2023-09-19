@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .apt {
+        display: none;
+    }
+    #table,select{
+        background-color: bisque;
+    }
+    #aptdate,button{
+        background-color: bisque;
+    }
+    #seating_plan{
+        background-color: bisque;
+    }
+   
+</style>
+
+<body>
+    
+    <span id="span">Select Treatment:</span><select  name="select" id="select" onchange="handlechange()">
+        <option value="0">--select--</option>
+        <option value="tc">Teeth Cleaning</option>
+        <option value="fl">Filling</option>
+        <option value="rct">Root Canal Treatment</option>
+        <option value="rct_cover">RCT + Cover</option>
+        <option value="br">Braces/Invisalign</option>
+        <br><br>
+
+    </select>
+    <br><br>
+    <div class="apt" id="apt">
+        <table border="2px" id="table">
+            <tr>
+                <th>Treatment</th>
+                <th>Seating</th>
+                <th>Costing</th>
+            </tr>
+            <tr>
+                <td id="data1"></td>
+                <td id="data2"></td>
+                <td id="data3"></td>
+            </tr>
+        </table>
+        <br><br>
+        
+        <span>Select Appoitment Date:</span><input type="date" name="aptdate" id="aptdate">
+        <br><br>
+        <button id="button" onclick="handleclick()">Book Appointment</button>
+        <br><br>
+        <table id="seating_plan" border="1"></table>
+
+
+    </div>
+
+    <script src="js/dental.js"></script>
+</body>
+
+</html>
