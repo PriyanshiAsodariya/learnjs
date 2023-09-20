@@ -62,7 +62,7 @@ const handleclick = () => {
         print = print + '<tr>'
 
         if (i === 0) {
-            print = print + '<td rowspan = 12>'
+            print = print + '<td rowspan = ' + treat_s + ' >'
             print = print + treat_name
             print = print + '</td>'
         }
