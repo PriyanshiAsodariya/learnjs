@@ -96,8 +96,7 @@ function demo(){
     if(true){
             
         console.log(x);
-    }
-       
+    }   
 }
 demo();
 
