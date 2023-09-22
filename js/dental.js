@@ -49,6 +49,7 @@ const handlechange = () => {
 }
 
 const handleclick = () => {
+    console.log("okkk");
 
     let aptdate = document.getElementById('aptdate').value;
     console.log(aptdate);
@@ -67,11 +68,9 @@ const handleclick = () => {
             print = print + '</td>'
         }
 
-
         print = print + '<td>'
         print = print + (d.toLocaleDateString())
         print = print + '</td>'
-
 
         print = print + '<td>'
         print = print + treat_c / treat_s

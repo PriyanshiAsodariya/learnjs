@@ -1,27 +1,15 @@
-let book1 = 'maths'
-let book2 = 'science'
-let book3 = 'computer'
-let book4 = 'english'
+// let book1 = 'maths'
+// let book2 = 'science'
+// let book3 = 'computer'
+// let book4 = 'english'
 
-console.log(book3);      // ans computer
+// console.log(book3);      // ans computer
 //----------------------------------------------
-
 
 // let book = new Array('maths' , 'science', 'computer', 'english');
 // console.log(book[3]);            //ans english
 
-//-----------------------------------------
-
-
-// let book = ['maths' , 'science', 'computer', 'english']
-// console.log(book[2]);                // ans computer
-
 //-------------------------------------
-
-// let book = ['maths' , 0.09 , 'priyanshi' , 'science', 'english']
-// console.log(book[1]);                   // ans 0.09 
-
-//------------------------------------------
 
 // let book = ['maths' , 'science', 'computer', 'english']
 // book[3] = 'bio';
@@ -42,21 +30,35 @@ console.log(book3);      // ans computer
 // console.log(book.length);               // ans total length of array
 //------------------------------------------
 
-// let book = ['maths' , 'science', 'computer', 'english']
 
-// book.push('hindi')                              //   hindi add in last of array
 
-// console.log(book);                          // ans full array with hindi in add array
+
+// add
+// let book1 = ['maths' , 'science', 'computer', 'english']
+
+// book.push('hindi')                              
+
+// console.log(book);                               // add in last
 //----------------------------------------------
 
 // let book = ['maths' , 'science', 'computer', 'english']
 
 // book.unshift('hindi')                              
 
-// console.log(book);                               // hindi add in before maths in full array
+// console.log(book);                                    // add in first
 
 //-----------------------------------------------------
 
+// let book = ['maths' , 'science', 'computer', 'english'];
+
+// book.splice(3,  0 , 'bio')
+                        
+// console.log(book);                                      // add in 3rd index of bio
+
+//-----------------------------------------
+
+
+// remove
 // let book = ['maths' , 'science', 'computer', 'english']
 
 // book.pop();
@@ -71,16 +73,44 @@ console.log(book3);      // ans computer
 // console.log(book);                                  // remove first element in array
 //----------------------------------------------
 
+// let book = ['maths' , 'science', 'computer', 'english'];
+
+// book.splice(1,2)
+
+// console.log(book);                               // remove 2 elemnt from index of 1
+
+//-----------------------------------
+
+
+
 // let text = 'how are you'
 
-// let arrayword = text.split(' ')
+// let ans = text.split(' ')
 
-// console.log(arrayword);                                    // convert string into array
+// console.log(ans);                                    // convert string into array
 
 //---------------------------------------------
 
-// let book = ['maths' , 'science', 'computer', 'english'];
+// task;
 
-// let position = book.indexOf("scienece");
+// let book = ["maths" , "science", "computer", "english"];
+
+// let position = book.indexOf("science");
 
 // console.log(position);
+
+//---------------------------------------
+
+// let book =["maths" , "science", "computer", "english"]
+
+// let posistion = book.lastIndexOf(book);
+
+// console.log(posistion);
+
+
+
+
+
+
+
+
