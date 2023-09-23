@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #error {
+        color: red;
+    }
+  
+    
+</style>
+
+<body>
+
+    <h2>Insurance System</h2>
+
+    <form action="#" onsubmit="return handlesubmit()">
+        <h3>Name</h3>
+        <input type="text" name="name" id="name">
+        <br>
+        <h3>date of birth:</h3>
+        <input type="date" id="birthdate" name="birthdate">
+        <br>
+        <h3>mobile no:</h3>
+        <input type="number" id="number" name="number">
+        <br>
+        <h3>occupation:</h3>
+        <select name="occupation" id="occupation">
+            <option value="sal">salaried</option>
+            <option value="self">self_employee</option>
+        </select>
+        <br><br>
+        <h3>annual Amount</h3>
+        <select name="select" id="select">
+            <option value="0">--select--</option>
+            <option value="1">0-3 lakh</option>
+            <option value="2">3 t0 5 lakh</option>
+            <option value="3">5 to 10 lakh</option>
+            <option value="4">above 10 lakh</option>
+        </select>
+        <br>
+        <h3>insurance amount</h3>
+        <input type="number" id="ins_amt" name="ins_amt">
+        <span id="error"></span>
+
+        <h3>smoke</h3>
+        <select name="smoke" id="smoke">
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+        </select>
+        <br><br>
+        <input type="submit") >
+
+    </form>
+
+   
+
+
+
+    <script src="js/insurance.js"></script>
+</body>
+
+</html>
