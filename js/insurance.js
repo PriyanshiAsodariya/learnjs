@@ -1,3 +1,6 @@
+document.getElementById('table').style.display = 'none';
+
+
 function handlesubmit() {
     // console.log("okkk");
     event.preventDefault();
@@ -64,8 +67,8 @@ function handlesubmit() {
     let total_premium = occ_prem + smoke_prem;
     console.log("total premium =", total_premium);
 
-    premium = total_premium + premium;
-    console.log(premium);
+    ans = total_premium + premium;
+    console.log(ans);
 
 
     let select = document.getElementById('select').value;
@@ -90,11 +93,9 @@ function handlesubmit() {
         }
     }
 
-        // document.getElementById('table').style.display = 'block'
+    document.getElementById('table').style.display = 'block'
 
-        let print = ' <table><tr><th>name</th><th>age</th><th>mobile no</th><th>insurance amount</th><th>premium</th </tr>'
-
-
+    let print = ' <table<tr><th>name</th><th>age</th><th>mobile no</th><th>insurance amount</th><th>premium</th</tr>'
 
         print = print + '<tr>'
 
@@ -106,20 +107,30 @@ function handlesubmit() {
         print = print + age
         print = print + '</td>'
 
-        // print = print + '<td>'
-        // print = print + 
-        // print = print + '</td>'
+        print = print + '<td>'
+        print = print + number
+        print = print + '</td>'
+
+        print = print + '<td>'
+        print = print + ins_amt
+        print = print + '</td>'
+
+        print = print + '<td>'
+        print = print + ans
+        print = print + '</td>'
 
         print = print + '</tr>'
 
-        print = print + '</table>'
+    
+    print = print + '</table>'
+    console.log(print);
 
-        document.getElementById('table').innerHTML = print;
+    document.getElementById('table').innerHTML = print;
 
 
-        return false;
+    return false;
 
-    }
+}
 
 
 

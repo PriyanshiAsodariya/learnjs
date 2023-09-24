@@ -91,21 +91,126 @@
 
 //---------------------------------------------
 
+//(indexof)
 // task;
 
 // let book = ["maths" , "science", "computer", "english"];
 
-// let position = book.indexOf("science");
+// let position = book.indexOf("maths");
 
-// console.log(position);
+// console.log(position);                 // ans index of 0
 
 //---------------------------------------
 
-// let book =["maths" , "science", "computer", "english"]
+//(lastindex)
+// let book =["maths" , "science", "computer", "maths"]
 
-// let posistion = book.lastIndexOf(book);
+// let poistion = book.lastIndexOf("maths");     //count index of last to first
+                                            
+// console.log(poistion);                     // ans index of 3
 
-// console.log(posistion);
+// let position = book.lastIndexOf("maths",2);
+
+// console.log(position);                          // ans index of 0
+
+//--------------------------------------------
+
+
+//(map)
+// let book =["maths" , "science", "computer", "maths"]
+
+// // console.log(book.length);
+// // for( let i=0; i<book.length; i++){
+// //     console.log(book[i]);
+// // }
+
+// book.map ((value,index) => {
+//     console.log(index + "--" + value );        //index --- value
+// })
+
+let arr = [45, 23,21]
+let a = arr.map((value,index,array)=>{
+    console.log(value,index,array)
+    return value + 1                     //45+1, 23+1, 21+1;//  array return
+})
+                                    
+console.log(a)                        // ans new array created in value increasing;
+//------------------------------------------
+
+//(filter)
+// let arr1 = [24 , 554, 70, 3 , 8 , 5 , 3 , 10]
+
+// let ans  = arr1.filter((a)=>{
+//    console.log(a);
+//    return a<10;                    // ans is less than 10 value[3,8,5]
+// })
+// console.log(ans);
+
+//--------------------------------------
+
+//(reduce)
+
+// let arr2 = [1,2,3,4,5]
+
+// let newarr = arr2.reduce((a1,a2)=>{
+//     return a1 + a2;
+// })                                          //array return 
+// console.log(newarr);                        //15
+
+//-------------------------------------
+
+//(every)
+
+// let age = [19 , 24 , 18 , 10]
+
+// let ans = age.every((age) => age>18);    // all condition are true than ans will come ture
+
+// console.log(ans);                 // ans false //beacuse only one condtion is true
+
+//-----------------------------------
+
+//(include)
+
+// let book_name =['maths', 'sci', 'hindi', 'english']
+// let ans1  = book_name.includes('hindi')        // check the element in array or not
+// console.log(ans1);                         //ans true
+
+//-------------------------------
+
+//(findindex)
+
+// let age = [10,24,33,18,19]
+
+// let ans = age.findIndex((age)=> age>=18)    //ans index of//  1 return undex
+
+// console.log(ans);             // they check in conditon in one true than they not check to more
+
+//---------------------------------------
+
+//(fill)
+
+// let book = ['maths', 'science', 'computer']
+// book.fill('bio');
+// console.log(book);                 //ans [bio,bio,bio] value can change in  full array
+
+//--------------------------------------
+
+//(sort)
+
+let nme = ['rahul','aman', 'karan']          //[aman,karan,rahul]
+nme.sort()
+console.log(nme);                           // a to z vise sorting
+
+//------------------------------------
+
+//(reverse)
+
+let fun = ['rahul', 'aman', 'karan']    //[karan ,aman ,rahul]
+fun.reverse()
+console.log(fun);                    // reverse print
+
+
+
 
 
 
