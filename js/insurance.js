@@ -1,4 +1,4 @@
-document.getElementById('table').style.display = 'none';
+// document.getElementById('table').style.display = 'none';
 
 
 function handlesubmit() {
@@ -49,7 +49,6 @@ function handlesubmit() {
         occ_prem = premium * 0.10;
         console.log("occupation premium =", occ_prem);
     } else if (occupation === 'sal') {
-        // occ_prem = premium;
         occ_prem = 0;
         console.log("occupation premium =", occ_prem);
     }
@@ -59,10 +58,18 @@ function handlesubmit() {
         smoke_prem = premium * 0.20;
         console.log("smoking premium =", smoke_prem);
     } else if (smoke === 'no') {
-        // smoke_prem = premium;
         smoke_prem = 0;
         console.log("smoking premium =", smoke_prem);
     }
+
+    // if (occupation === 'self') {
+    //     occ_prem = premium * 0.10;
+    //     console.log("occupation premium =", occ_prem);
+    // } 
+    //  if(smoke === 'yes'){
+    //     smoke_prem = premium * 0.20;
+    //     console.log("smoke premium=",smoke_prem);
+    // }
 
     let total_premium = occ_prem + smoke_prem;
     console.log("total premium =", total_premium);
@@ -95,7 +102,7 @@ function handlesubmit() {
 
     document.getElementById('table').style.display = 'block'
 
-    let print = ' <table<tr><th>name</th><th>age</th><th>mobile no</th><th>insurance amount</th><th>premium</th</tr>'
+    let print = ' <table border=1><tr><th>name</th><th>age</th><th>mobile no</th><th>insurance amount</th><th>premium</th</tr>'
 
         print = print + '<tr>'
 

@@ -128,33 +128,31 @@
 //     console.log(index + "--" + value );        //index --- value
 // })
 
-let arr = [45, 23,21]
-let a = arr.map((value,index,array)=>{
-    console.log(value,index,array)
-    return value + 1                     //45+1, 23+1, 21+1;//  array return
-})
+// let arr = [45, 23,21]
+// let a = arr.map((value,index,array)=>{
+//     console.log(value,index,array)
+//     return value + 1                     //45+1, 23+1, 21+1;//  array return
+// })
                                     
-console.log(a)                        // ans new array created in value increasing;
+// console.log(a)                        // ans new array created in value increasing;
 //------------------------------------------
 
-//(filter)
+// (filter)
 // let arr1 = [24 , 554, 70, 3 , 8 , 5 , 3 , 10]
 
-// let ans  = arr1.filter((a)=>{
-//    console.log(a);
-//    return a<10;                    // ans is less than 10 value[3,8,5]
-// })
-// console.log(ans);
+// let ans  = arr1.filter((v,i)=> v<10)
+                    
+// console.log(ans);              // ans is less than 10 value[3,8,5]
 
 //--------------------------------------
 
-//(reduce)
+// (reduce)
 
 // let arr2 = [1,2,3,4,5]
 
-// let newarr = arr2.reduce((a1,a2)=>{
-//     return a1 + a2;
-// })                                          //array return 
+// let newarr = arr2.reduce((acc,v,i)=> acc + v ,0)
+                                        
+// //array return 
 // console.log(newarr);                        //15
 
 //-------------------------------------
@@ -168,6 +166,7 @@ console.log(a)                        // ans new array created in value increasi
 // console.log(ans);                 // ans false //beacuse only one condtion is true
 
 //-----------------------------------
+
 
 //(include)
 
