@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/insurance.css">
 </head>
 <style>
     #error {
@@ -13,29 +14,46 @@
     .table{
         display: none;
     }
+    #nameErr{
+        color: red;
+    }
+    #birthErr{
+        color: red;
+    }
+    #occErr{
+        color: red;
+    }
+    #smokeErr{
+        color: red;
+    }
+    #amtErr{
+        color: red;
+    }
+    
 </style>
 
 <body>
-
+<div class="insurance">
     <h2>Insurance System</h2>
 
     <form action="#" onsubmit="return handlesubmit()">
         <h3>Name</h3>
-        <input type="text" name="name" id="name">
+        <input type="text" name="name" id="name"><span id="error"></span>
         <br>
         <h3>date of birth:</h3>
-        <input type="date" id="birthdate" name="birthdate">
+        <input type="date" id="birthdate" name="birthdate"><span id="birthErr"></span>
         <br>
         <h3>mobile no:</h3>
-        <input type="number" id="number" name="number">
+        <input type="number" id="number" name="number"><span id="nameErr"></span>
         <br>
-        <h3>occupation:</h3>
+        <h3>occupation:</h3>  <span id="occErr"></span>
         <select name="occupation" id="occupation">
+            <option value="0">--select--</option>
             <option value="sal">salaried</option>
             <option value="self">self_employee</option>
         </select>
         <br>
-        <h3>annual Amount</h3>
+        <h3>annual Amount</h3> <span id="amtErr"></span>
         <select name="select" id="select">
             <option value="0">--select--</option>
             <option value="1">0-3 lakh</option>
@@ -45,11 +63,12 @@
         </select>
         <br>
         <h3>insurance amount</h3>
-        <input type="number" id="ins_amt" name="ins_amt">
-        <span id="error"></span>
+        <input type="number" id="ins_amt" name="ins_amt"><span id="error"></span>
+        
 
-        <h3>smoke</h3>
-        <select name="smoke" id="smoke">
+        <h3>smoke</h3> <span id="smokeErr"></span>
+        <select name="smoke" id="smoke"> 
+            <option value="0">--select--</option>
             <option value="yes">yes</option>
             <option value="no">no</option>
         </select>
@@ -61,6 +80,10 @@
         </div>
 
     </form>
+
+
+
+</div>
 
 
 

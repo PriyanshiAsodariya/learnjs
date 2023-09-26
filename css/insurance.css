@@ -1,0 +1,19 @@
+body{
+ 
+    background-position: center;
+    /* background-image: url(../image/ins_img.avif); */
+    display: flex;
+}
+.insurance{
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 350px;
+    padding: 35px;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+
+
+
+
+

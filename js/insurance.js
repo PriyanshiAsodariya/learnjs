@@ -4,16 +4,53 @@
 function handlesubmit() {
     // console.log("okkk");
     event.preventDefault();
+    let  nameE = true;
+    let  numberE = true;
+    let birthE = true;
+    let  occE = true;
+    let smokeE = true;
 
 
     let name = document.getElementById('name').value
     console.log(name);
 
+    if(name === ''){
+        document.getElementById('error').innerHTML = 'plaese enter name';
+    }else{
+        let regname = /^[a-zA-z]{2,30}$/
+        if(regname .test(name)){
+            document.getElementById('error').innerHTML = '';
+            nameE = false;
+        }else{
+            document.getElementById('error').innerHTML = 'plaese enter valid name';
+        }
+    }
+
     let number = document.getElementById('number').value;
     console.log(number);
 
+    if(number === ''){
+        document.getElementById('nameErr').innerHTML = 'plaese enter mo.number';
+    }else{
+        let regmobile = /^\d{10}$/
+        if(regmobile.test(number)){
+            document.getElementById('nameErr').innerHTML = '';
+            numberE = false;
+        }else{
+            document.getElementById('nameErr').innerHTML = 'plaese enter valid mo.number';
+        }
+        
+    }
+
     birthdate = (document.getElementById('birthdate').value);
     console.log(birthdate);
+
+    if(birthdate === ''){
+        document.getElementById('birthErr').innerHTML = 'select birth date'
+    }else{
+        document.getElementById('birthErr'),innerHTML = '';
+        birthE = false
+    }
 
     let d = new Date(birthdate)
     console.log(d);
@@ -42,8 +79,22 @@ function handlesubmit() {
     let occupation = document.getElementById('occupation').value;
     console.log(occupation);
 
+    if(occupation === '0'){
+        document.getElementById('occErr').innerHTML = 'select occupation'
+    }else{
+        document.getElementById('occErr'),innerHTML = '';
+        occE = false;
+    }
+
     let smoke = document.getElementById('smoke').value;
     console.log(smoke);
+
+    if(smoke === '0'){
+        document.getElementById('smokeErr').innerHTML = 'select smoke '
+    }else{
+        document.getElementById('smokeErr'),innerHTML = '';
+        smokeE = false;
+    }
 
     if (occupation === 'self') {
         occ_prem = premium * 0.10;
@@ -98,6 +149,15 @@ function handlesubmit() {
         } else {
             document.getElementById('error').innerHTML = 'you are not eligible for this amt'
         }
+    }
+
+    let amt = document.getElementById('select').value
+    console.log(amt);
+
+    if(amt === '0'){
+        document.getElementById('amtErr').innerHTML = 'select annual amount'
+    }else{
+        document.getElementById('amtErr').innerHTML = '';
     }
 
     document.getElementById('table').style.display = 'block'
