@@ -82,7 +82,7 @@ function handlesubmit() {
     if(occupation === '0'){
         document.getElementById('occErr').innerHTML = 'select occupation'
     }else{
-        document.getElementById('occErr'),innerHTML = '';
+        document.getElementById('occErr').innerHTML = '';
         occE = false;
     }
 

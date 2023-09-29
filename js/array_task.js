@@ -301,8 +301,13 @@ rotatArr1(array,3)
 //--------------------------
 
 
-let a1 = [1,20,33,4,5]
+let a1 = [1,20,33,20,5]
 let a2 = [1,20,33,4,6]
+
+//(reverse )
+let arr4 = a1.slice().reverse()
+console.log(arr4);
+//----------------------
 
 const largest = (a1) =>{
     let ans = a1.sort((a,b) => b-a)
@@ -351,19 +356,19 @@ const compareArray = (a1,a2) =>{
     }else{
         for(let i=0; i<a1.length; i++){
             if(a1[i] != a2[i]){
-                return false
+                return false;
             }
         }
         return true; 
     }
 }
-// let result = compareArray(a1,a2)
+let result2 = compareArray(a1,a2)
 
-//     if(result){
-//         console.log("both are equal");
-//     }else{
-//         console.log("both are not equal:");
-//     }
+    if(result2){
+        console.log("both are equal");
+    }else{
+        console.log("both are not equal:");
+    }
 //-----------------------------------------
 //(occurance of first and last)
 let array2 = [1,2,3,3,3,4]
@@ -388,8 +393,101 @@ const firstoccurance = (a2,target) =>{
     }
     console.log(" first index: " + firstindex + " second index: " + lastindex);
 }
-firstoccurance(array2,3)
+// firstoccurance(array2,3)
 //--------------------------------
+
+//(remove all occurance)
+
+const removeAllOcc = (a1,elem) => {
+    let ans = a1.filter((v) => v !== elem)
+    console.log(ans); 
+}
+// removeAllOcc(a1,20)
+
+//----------------------------------------
+
+const replaceAllOcc = (a1,elem,newelem) => {
+    let ans = a1.map((v)=> v === elem ? newelem : v)
+    console.log(ans);
+}
+// replaceAllOcc(a1,20,99)
+
+//--------------------------------------
+//(sum of maximum three number)
+
+let number1 = [100,2,33,45,99]
+
+let answer = number1.sort().slice(0,3).reduce((acc,v)=> acc + v)
+console.log(answer);
+
+//-----------------------------------
+
+let array4 = [1,22,3,4,5]
+
+const checkAsec = (a4) =>{
+    for(let i=0; i<a4.length; i++){
+        for(let j = i+1; j<a4.length; j++){
+            if(a4[i] > a4[j]){
+                return false;
+            }
+        }
+       
+    }
+    return true;
+}
+// let res = checkAsec(array4);
+// if(res){
+//     console.log("array is sorted in asecnding");
+// }else{
+//     console.log("array is not soreted in ascending");
+// }
+//---------------------------------------------
+
+//(check descending)
+let array5 = [1,22,3,4,5]
+
+const checkAdec = (a5) =>{
+    for(let i=0; i<a5.length; i++){
+        for(let j = i+1; j<a5.length; j++){
+            if(a5[i] < a5[j]){
+                return false;
+            }
+        } 
+    }
+    return true;
+}
+let res1 = checkAdec(array5);
+if(res1){
+    console.log("array is sorted in descending");
+}else{
+    console.log("array is not soreted in descending");
+}
+
+//--------------------------------------
+//(multi - diamension array)
+
+let a5 = [
+    [1 , 'maths' , 50],
+    [2, 'science', 60],
+    [3, 'english', 70]
+];
+console.log(a5);
+
+for(let i=0; i<a5.length; i++){
+    for(let j=0; j<a5[i].length; j++){
+        console.log(a5[i][j]);
+    }
+}
+
+a5.map((v)=>{
+    v.map((v1)=>{
+        console.log(v1);
+    })
+})
+
+//------------------------------------------
+
+
 
 
 
