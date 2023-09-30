@@ -134,7 +134,7 @@ const revArr = (arr2) => {
     }
     console.log(newArr);
 }
-// revArr(arr2)
+revArr(arr2)
 
 //---------------------------
 
@@ -201,19 +201,19 @@ const checkelem = (arr2, elem) => {
 // }
 // // dupArr(arr2);
 
-let arr3 =[5,6,7,8,7,9]
+let arr3 = [5, 6, 7, 8, 7, 9]
 
-const dupArray = (arr3) =>{
+const dupArray = (arr3) => {
 
-    let newArr =[];
+    let newArr = [];
 
-    arr3.map((v)=>{
-        if(!newArr.includes(v)){
+    arr3.map((v) => {
+        if (!newArr.includes(v)) {
             newArr.push(v)
         }
     })
     console.log(newArr);
-    
+
 }
 
 dupArray(arr3);
@@ -222,17 +222,17 @@ dupArray(arr3);
 
 //(merge two array in new array)
 
-let data1 = [1,2,3,4,5]
-let data2 = [10,20,30,40,50]
+let data1 = [1, 2, 3, 4, 5]
+let data2 = [10, 20, 30, 40, 50]
 let data3 = []
 
-for(let i=0; i<data1.length; i++){
+for (let i = 0; i < data1.length; i++) {
     data3[i] = data1[i]
 }
-for(let i=0; i<data2.length; i++){
-//   console.log( [data1.length+i]);
-    data3[data1.length+i] = data2[i]
-    
+for (let i = 0; i < data2.length; i++) {
+    //   console.log( [data1.length+i]);
+    data3[data1.length + i] = data2[i]
+
 }
 
 console.log(data3);
@@ -241,7 +241,7 @@ console.log(data3);
 
 //(split array into two array)
 
-let data = [1,2,3,'A','B','C', 4,5,6, 'D','E']
+let data = [1, 2, 3, 'A', 'B', 'C', 4, 5, 6, 'D', 'E']
 let stingArr = []
 let numArr = []
 
@@ -263,85 +263,84 @@ let numArr = []
 
 
 
-    let num = data.filter((v)=>typeof(v)=== 'number')
-    let string = data.filter((v)=>typeof (v)=== 'string') 
+let num = data.filter((v) => typeof (v) === 'number')
+let string = data.filter((v) => typeof (v) === 'string')
 
-    console.log(num);
-    console.log(string);
+console.log(num);
+console.log(string);
 
 //----------------------------------------
 //(right rotate)
-let arr1 = [1,2,3,4,5]        //[3,4,5,1,2]
+let arr1 = [1, 2, 3, 4, 5]        //[3,4,5,1,2]
 
-const rotatArr = (arr1,n)=>{
+const rotatArr = (arr1, n) => {
 
-    for(i=0; i<n; i++){
+    for (i = 0; i < n; i++) {
         let elem = arr1.pop();
         arr1.unshift(elem)
     }
     console.log(arr1);
 }
-rotatArr(arr1,3)
+rotatArr(arr1, 3)
 
 //-----------------------------------
 
 //(left rotate)
 
- let array = [1,2,3,4,5]      // [4,5,1,2,3]
+let array = [1, 2, 3, 4, 5]      // [4,5,1,2,3]
 
- const rotatArr1 = (array,n)=>{
+const rotatArr1 = (array, n) => {
 
-    for(i=0; i<n; i++){
+    for (i = 0; i < n; i++) {
         let elem = array.shift();
         array.push(elem)
     }
     console.log(array);
 }
-rotatArr1(array,3)
+rotatArr1(array, 3)
 //--------------------------
 
 
-let a1 = [1,20,33,20,5]
-let a2 = [1,20,33,4,6]
+let a1 = [1, 20, 33, 20, 5]
+let a2 = [1, 20, 33, 4, 6]
 
 //(reverse )
 let arr4 = a1.slice().reverse()
 console.log(arr4);
 //----------------------
 
-const largest = (a1) =>{
-    let ans = a1.sort((a,b) => b-a)
+const largest = (a1) => {
+    let ans = a1.sort((a, b) => b - a)
     console.log(ans)
 
     console.log(ans[1]);
-} 
-// largest(a1);
+}
+largest(a1);
 //----------------------------------
 
-const smallest = (a1,k) =>{
-   let ans = a1.sort((a,b) => a-b)
-   console.log(ans[k-1]);
+const smallest = (a1, k) => {
+    let ans = a1.sort((a, b) => a - b)
+    console.log(ans[k - 1]);
 }
 // smallest(a1,3)
 //------------------------
+const median = (a1) => {
 
-const median = (a1) =>{
-
-    let array = a1.sort((a,b)=>a-b)
+    let array = a1.sort((a, b) => a - b)
     console.log(array);
     let median;
-    
-    let first = Math.floor(array.length/2-1)
-    let second = Math.floor(array.length/2)
 
-    if(array.length % 2 === 0){
-        median = (first + second)/2
+    let first = Math.floor(array.length / 2 - 1)
+    let second = Math.floor(array.length / 2)
+
+    if (array.length % 2 === 0) {
+        median = (first + second) / 2
 
         console.log(median);
 
-    }else{
-        let ans = Math.floor(array.length/2)
-        median =  array[ans]
+    } else {
+        let ans = Math.floor(array.length / 2)
+        median = array[ans]
 
         console.log(median);
     }
@@ -349,45 +348,45 @@ const median = (a1) =>{
 median(a1);
 //---------------------------------
 
-const compareArray = (a1,a2) =>{
-   
-    if(a1.length != a2.length){
+const compareArray = (a1, a2) => {
+
+    if (a1.length != a2.length) {
         return false;
-    }else{
-        for(let i=0; i<a1.length; i++){
-            if(a1[i] != a2[i]){
+    } else {
+        for (let i = 0; i < a1.length; i++) {
+            if (a1[i] != a2[i]) {
                 return false;
             }
         }
-        return true; 
+        return true;
     }
 }
-let result2 = compareArray(a1,a2)
+let result2 = compareArray(a1, a2)
 
-    if(result2){
-        console.log("both are equal");
-    }else{
-        console.log("both are not equal:");
-    }
+if (result2) {
+    console.log("both are equal");
+} else {
+    console.log("both are not equal:");
+}
 //-----------------------------------------
 //(occurance of first and last)
-let array2 = [1,2,3,3,3,4]
+let array2 = [1, 2, 3, 3, 3, 4]
 
-let result  = array2.indexOf(3)
-console.log("first index of occurance",result);
+let result = array2.indexOf(3)
+console.log("first index of occurance", result);
 
 let result1 = array2.lastIndexOf(3)
-console.log("last index of occurance",result1);
+console.log("last index of occurance", result1);
 //---------------------------------------------
 
 let firstindex = -1;
 let lastindex = -1
-const firstoccurance = (a2,target) =>{
-    for(let i=0; i<a2.length; i++){
-        if(a2[i] === target && firstindex === -1){
+const firstoccurance = (a2, target) => {
+    for (let i = 0; i < a2.length; i++) {
+        if (a2[i] === target && firstindex === -1) {
             firstindex = i;
         }
-        if(a2[i] === target && firstindex != -1){
+        if (a2[i] === target && firstindex != -1) {
             lastindex = i;
         }
     }
@@ -398,16 +397,16 @@ const firstoccurance = (a2,target) =>{
 
 //(remove all occurance)
 
-const removeAllOcc = (a1,elem) => {
+const removeAllOcc = (a1, elem) => {
     let ans = a1.filter((v) => v !== elem)
-    console.log(ans); 
+    console.log(ans);
 }
 // removeAllOcc(a1,20)
 
 //----------------------------------------
 
-const replaceAllOcc = (a1,elem,newelem) => {
-    let ans = a1.map((v)=> v === elem ? newelem : v)
+const replaceAllOcc = (a1, elem, newelem) => {
+    let ans = a1.map((v) => v === elem ? newelem : v)
     console.log(ans);
 }
 // replaceAllOcc(a1,20,99)
@@ -415,23 +414,23 @@ const replaceAllOcc = (a1,elem,newelem) => {
 //--------------------------------------
 //(sum of maximum three number)
 
-let number1 = [100,2,33,45,99]
+let number1 = [100, 2, 33, 45, 99]
 
-let answer = number1.sort().slice(0,3).reduce((acc,v)=> acc + v)
+let answer = number1.sort().slice(0, 3).reduce((acc, v) => acc + v)
 console.log(answer);
 
 //-----------------------------------
 
-let array4 = [1,22,3,4,5]
+let array4 = [1, 22, 3, 4, 5]
 
-const checkAsec = (a4) =>{
-    for(let i=0; i<a4.length; i++){
-        for(let j = i+1; j<a4.length; j++){
-            if(a4[i] > a4[j]){
+const checkAsec = (a4) => {
+    for (let i = 0; i < a4.length; i++) {
+        for (let j = i + 1; j < a4.length; j++) {
+            if (a4[i] > a4[j]) {
                 return false;
             }
         }
-       
+
     }
     return true;
 }
@@ -444,22 +443,22 @@ const checkAsec = (a4) =>{
 //---------------------------------------------
 
 //(check descending)
-let array5 = [1,22,3,4,5]
+let array5 = [1, 22, 3, 4, 5]
 
-const checkAdec = (a5) =>{
-    for(let i=0; i<a5.length; i++){
-        for(let j = i+1; j<a5.length; j++){
-            if(a5[i] < a5[j]){
+const checkAdec = (a5) => {
+    for (let i = 0; i < a5.length; i++) {
+        for (let j = i + 1; j < a5.length; j++) {
+            if (a5[i] < a5[j]) {
                 return false;
             }
-        } 
+        }
     }
     return true;
 }
 let res1 = checkAdec(array5);
-if(res1){
+if (res1) {
     console.log("array is sorted in descending");
-}else{
+} else {
     console.log("array is not soreted in descending");
 }
 
@@ -467,28 +466,98 @@ if(res1){
 //(multi - diamension array)
 
 let a5 = [
-    [1 , 'maths' , 50],
+    [1, 'maths', 50],
     [2, 'science', 60],
     [3, 'english', 70]
 ];
 console.log(a5);
 
-for(let i=0; i<a5.length; i++){
-    for(let j=0; j<a5[i].length; j++){
+for (let i = 0; i < a5.length; i++) {
+    for (let j = 0; j < a5[i].length; j++) {
         console.log(a5[i][j]);
     }
 }
 
-a5.map((v)=>{
-    v.map((v1)=>{
+a5.map((v) => {
+    v.map((v1) => {
         console.log(v1);
     })
 })
 
 //------------------------------------------
 
+let a6 = [
+    [1, 'maths', 50],
+    [2, 'science', 60],
+    [3, 'english', 70]
+];
+for (let i = 0; i < a6.length; i++) {
+    for (let j = 0; j<a6[i].length; j++) {
+        // console.log(a6[i][j]);
+    
+    }
+}
+let print = '<table><th>no.</th><th>subject</th><th>marks</th></table>'
 
 
+    // print = print + '<tr>'
+
+    print = print + '<tr>'
+    
+    print = print + '<td>'
+    print = print + a6[0][0]
+    print = print + '</td>'
+
+    print = print + '<td>'
+    print = print + a6[0][1];
+    print = print + '</td>'
+
+    print = print + '<td>'
+    print = print + a6[0][2];
+    print = print + '</td>'
+
+    print = print + '</tr>'
+
+
+    print = print + '<tr>'
+
+    print = print + '<td>'
+    print = print + a6[1][0]
+    print = print + '</td>'
+
+    print = print + '<td>'
+    print = print + a6[1][1];
+    print = print + '</td>'
+
+    print = print + '<td>'
+    print = print + a6[1][2];
+    print = print + '</td>'
+
+    print = print + '</tr>'
+
+    
+    print = print + '<tr>'
+
+    print = print + '<td>'
+    print = print + a6[2][0]
+    print = print + '</td>'
+
+    print = print + '<td>'
+    print = print + a6[2][1];
+    print = print + '</td>'
+
+    print = print + '<td>'
+    print = print + a6[2][2];
+    print = print + '</td>'
+
+    print = print + '</tr>'
+
+
+    // print = print + '</tr>'
+
+    print = print + '</table>'
+
+    document.getElementById('box').innerHTML = print
 
 
 
