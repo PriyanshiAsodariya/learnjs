@@ -491,70 +491,19 @@ let a6 = [
     [2, 'science', 60],
     [3, 'english', 70]
 ];
-for (let i = 0; i < a6.length; i++) {
-    for (let j = 0; j<a6[i].length; j++) {
+
+let print = '<table border="1"><th>no.</th><th>subject</th><th>marks</th>'
+
+for (let i=0; i<a6.length; i++) {
+    print += '<tr>'
+    for (let j=0; j<a6[i].length; j++) {
         // console.log(a6[i][j]);
-    
+        print+= '<td>'
+        print+= a6[i][j]
+        print+= '</td>'
     }
+    print+= '</tr>'
 }
-let print = '<table><th>no.</th><th>subject</th><th>marks</th></table>'
-
-
-    // print = print + '<tr>'
-
-    print = print + '<tr>'
-    
-    print = print + '<td>'
-    print = print + a6[0][0]
-    print = print + '</td>'
-
-    print = print + '<td>'
-    print = print + a6[0][1];
-    print = print + '</td>'
-
-    print = print + '<td>'
-    print = print + a6[0][2];
-    print = print + '</td>'
-
-    print = print + '</tr>'
-
-
-    print = print + '<tr>'
-
-    print = print + '<td>'
-    print = print + a6[1][0]
-    print = print + '</td>'
-
-    print = print + '<td>'
-    print = print + a6[1][1];
-    print = print + '</td>'
-
-    print = print + '<td>'
-    print = print + a6[1][2];
-    print = print + '</td>'
-
-    print = print + '</tr>'
-
-    
-    print = print + '<tr>'
-
-    print = print + '<td>'
-    print = print + a6[2][0]
-    print = print + '</td>'
-
-    print = print + '<td>'
-    print = print + a6[2][1];
-    print = print + '</td>'
-
-    print = print + '<td>'
-    print = print + a6[2][2];
-    print = print + '</td>'
-
-    print = print + '</tr>'
-
-
-    // print = print + '</tr>'
-
     print = print + '</table>'
 
     document.getElementById('box').innerHTML = print
