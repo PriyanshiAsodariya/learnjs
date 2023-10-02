@@ -1,4 +1,5 @@
 let array = [];
+let upadte = null
 
 
 const handlesubmit = () =>{
@@ -8,45 +9,51 @@ const handlesubmit = () =>{
     let name = document.getElementById('name').value;
     console.log(name);
 
-    array.push(name)
-    console.log(array);
+    // console.log(array);
 
-    let print = '<ul>'
+    if(upadte != null || upadte === 0){
+        // console.log("update opertion");
+        array[upadte] = name;
+        upadte = null;
 
-    array.map((name)=> {
-
-        print = print + '<li>'
-        print = print +   name + '<input type="button" onclick ="handleclick()" value="x"></input>'
-        print = print + '</li>'
-
-    })
-    print = print + '</ul>'
-
-    //-----------------------------------------------
-
-        // array.push(name)
-        // console.log(array);
-
-    //     let print = '<ul>'
-    // for(let i=0; i<array.length; i++){
+    }else{
+        array.push(name)
+        // console.log("add opertaion");  
+    }
     
-    //     print = print + '<li>'
-    //     print = print +   array[i] + '' + '<input type="button" value="x"></input>'
-    //     print = print + '</li>'
+    document.getElementById('name').value = '';
+    
+    display();
+}
 
-    // }
-    //     print = print + '</ul>'
+const handleclick = (i)=>{
+    
+   array.splice(i,1);
 
-    document.getElementById('ans').innerHTML = print
+   display();
+}
+const handleedit = (i) => {
+    // console.log(i);
+    upadte = i;
+
+    document.getElementById('name').value = array[i];
+
+    // display();
     
 }
 
-const handleclick = ()=>{
-    array.pop();
-    console.log(array);
+const display =()=>{
+    
+    let print = '<ul>'
 
-    // document.getElementById('ans').innerHTML = array
-   
+    array.map((name,i)=> {
+
+        print = print + `<li>${name} <button onclick="handleedit(${i})">E</button> <button onclick="handleclick(${i})">x</button> </li>`
+    
+    })
+    print = print + '</ul>'
+
+    document.getElementById('ans').innerHTML = print
 }
 
 
