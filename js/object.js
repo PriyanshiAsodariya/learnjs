@@ -181,14 +181,16 @@ for(let k in data){
 
     if(k === 'branches'){
         for(let p in data[k]){
-            console.log(data[k][p]);
+            // console.log(data[k][p]);
+            for(let m in data[k][p]){
+                console.log(data[k][p][m]);
+            }
         }
     }else{
         for(let j in data[k]){
             console.log(data[k][j]);
         }
     }
-
 }
 
 
