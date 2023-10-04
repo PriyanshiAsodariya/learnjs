@@ -12,7 +12,7 @@ header.style.borderBottom = '5px solid black'     // css can apply
 
 //-----------------------------------
 
-//(getelemetnbyClass)
+//(getelemetnbyClassname)
 
 let items = document.getElementsByClassName('list-item');
 // console.log(items[0]);      // index through li

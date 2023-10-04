@@ -178,7 +178,6 @@ let data = {
 
 for(let k in data){
     console.log(k);
-
     if(k === 'branches'){
         for(let p in data[k]){
             // console.log(data[k][p]);
