@@ -44,16 +44,26 @@ const handleedit = (i) => {
 
 const display =()=>{
     
-    let print = '<ul>'
+    // let print = '<ul>'
 
-    array.map((name,i)=> {
+    // array.map((name,i)=> {
 
-        print = print + `<li>${name} <button onclick="handleedit(${i})">E</button> <button onclick="handleclick(${i})">x</button> </li>`
+    //     print = print + `<li>${name} <button onclick="handleedit(${i})">E</button> <button onclick="handleclick(${i})">x</button> </li>`
     
-    })
-    print = print + '</ul>'
+    // })
+    // print = print + '</ul>'
 
-    document.getElementById('ans').innerHTML = print
+    // document.getElementById('ans').innerHTML = print
+
+    let ulelem = document.getElementById('ans');
+
+    let lielem = document.createElement('li');
+    let litext = document.createTextNode('10');
+
+    lielem.appendChild(litext)
+    ulelem.appendChild(lielem);
+
+    
 }
 
 
