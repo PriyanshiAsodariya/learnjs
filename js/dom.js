@@ -65,7 +65,6 @@ const handlesubmit = ()=>{
     console.log("okkk");
 
 
-
 let div = document.getElementById('ans');
 
 let name = document.getElementById('name').value;
@@ -73,8 +72,6 @@ console.log(name);
 
 let id = Math.floor(Math.random()* 1000)
 console.log(id);
-
-
 
 let divelem = document.createElement('div')
 divelem.setAttribute('id', 'div-'+id)
