@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/hotel_bill.css">
+</head>
+
+<style>
+    .box{
+        padding-top: 50px;
+        /* padding-left: 70px;   */
+    }
+    h2{
+        /* text-align: center; */
+    }
+    body{
+        /* background-color:#f4b63c ; */
+        /* justify-content: center; */
+    }
+    #box{
+        /* display:none */
+    }
+</style>
+<body>
+    <form action="" onsubmit="handlesubmit()">
+        <div class="box">
+            
+        <h2> Hotel Bill Collecting System</h2>
+
+        <h4>DATE</h4>
+       <input type="date" id="date"><span id="dateErr"></span>
+        <br><br>
+        <H4>TABLE</H4>
+        <select name="table" id="table">
+            <option value="0">--no of table --</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select><span id="tableErr"></span>
+
+        <br><br>
+        <h4>FOOD</h4>
+        <select name="food" id="food">
+            <option value="0">--food--</option>
+            <option value="250">panjabi</option>
+            <option value="150">chinees</option>
+            <option value="200">south indian</option>
+        </select><span id="foodErr"></span>
+
+        <br><br>
+        
+        <h4>NO. OF PERSON</h4>
+        <input type="number" id="person"><span id="personErr"></span>
+
+        <br><br>
+        <input type="submit">
+    
+    </form>
+    <br><br>
+    <table id="box"border=1>
+        <th>Date</th>
+        <th>Table</th>
+        <th>Food</th>
+        <th>No. Of Person</th>
+        <th>Total Bill</th>
+
+    </table>
+
+</div>
+    
+
+    <script src="js/hotel_bill.js"></script>
+</body>
+</html>

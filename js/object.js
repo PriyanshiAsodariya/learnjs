@@ -56,7 +56,7 @@ console.log('email' in person);           //check in email is in object or  not 
 
 //(classroom task)
 
-// const person = [
+// const person3 = [
 //     {
 //         name: "Amit",
 //         age: 25,
@@ -67,7 +67,7 @@ console.log('email' in person);           //check in email is in object or  not 
 //     }
 // ];
 
-// person.map((v,i)=>{
+// person3.map((v,i)=>{
 //     console.log(v.name , v.age);
 // })
 
@@ -94,26 +94,26 @@ console.log('email' in person);           //check in email is in object or  not 
 
 //-----------------------------
 
-// const myObj = {
-//     name:"jd",
-//     age:20,
-//     cars:{
-//         car1:"ford",
-//         car2:"breza",
-//         car3:"BMW"
-//     }
-// }
+const myObj = {
+    name:"jd",
+    age:20,
+    cars:{
+        car1:"ford",
+        car2:"breza",
+        car3:"BMW"
+    }
+}
 
-// for(let k in myObj){
-//     if(k === 'cars'){
-//         for(let j in myObj[k]){
-//             console.log(myObj[k][j]);
-//         }
-//     }else{
-//         console.log(myObj[k]);
-//     }
+for(let k in myObj){
+    if(k === 'cars'){
+        for(let j in myObj[k]){
+            console.log(myObj[k][j]);
+        }
+    }else{
+        console.log(myObj[k]);
+    }
    
-// }
+}
 //------------------------------
 
 
@@ -137,14 +137,14 @@ console.log('email' in person);           //check in email is in object or  not 
 // ];
 
 // person.map((v,i)=>{
-//     for(let k in v){
-//         if(k === 'course'){
-//             for(let j in v[k]){
-//                 console.log(v[k][j]);
-//             }
-//         }else{
-//             console.log(v[k]);
-//         }
+    // for(let k in v){
+    //     if(k === 'course'){
+    //         for(let j in v[k]){
+    //             console.log(v[k][j]);
+    //         }
+    //     }else{
+            // console.log(v[k]);
+        // }
 //     }
 // })
 //-------------------------
@@ -176,20 +176,21 @@ let data = {
     }
 }
 
-for(let k in data){
-    console.log(k);
-    if(k === 'branches'){
-        for(let p in data[k]){
-            // console.log(data[k][p]);
-            for(let m in data[k][p]){
-                console.log(data[k][p][m]);
-            }
-        }
-    }else{
-        for(let j in data[k]){
-            console.log(data[k][j]);
-        }
-    }
-}
+// for(let k in data){
+//     console.log(k);
+//     if(k === 'branches'){
+//         for(let p in data[k]){
+//             // console.log(data[k][p]);
+//             for(let m in data[k][p]){
+//                 console.log(data[k][p][m]);
+//             }
+//         }
+//     }else{
+//         for(let j in data[k]){
+//             console.log(data[k][j]);
+    //     }
+    // }
+// }
+
 
 

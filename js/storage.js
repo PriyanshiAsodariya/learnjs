@@ -59,7 +59,7 @@ const handlesubmit = () =>{
         localStorage.setItem('name',JSON.stringify([name]))
     }
 
-    // display();
+    display();
     
 }
 
@@ -71,14 +71,14 @@ const display  = () =>{
 
     uldata.innerHTML = ''
 
-    // if(data){
+
         data.map((l)=>{
             let lidata = document.createElement('li');
             let litext = document.createTextNode(l)
             lidata.appendChild(litext)
             uldata.appendChild(lidata)
         })
-    // }
+  
     
 
 }
