@@ -71,19 +71,24 @@ const handlesubmit = () => {
 
     display();
 }
+    
 
 const display = () => {
+    
     
     let getdata = JSON.parse(localStorage.getItem('hotel_data'));       
     console.log(getdata);
 
-    parent.innerHTML = ''
+    parent.innerHTML = '';
 
     getdata.map((v)=>{
         let parent = document.getElementById('box');
-       
-        let tr = document.createElement('tr')
+
+        let id = Math.floor(Math.random()*1000)
+        console.log(id);
     
+        let tr = document.createElement('tr')
+        tr.setAttribute('id','tr'+id)
 
         let td1 = document.createElement('td')
         let td1text = document.createTextNode(v.date);
@@ -115,21 +120,52 @@ const display = () => {
         td5.appendChild(td5text);
         tr.appendChild(td5);
         parent.appendChild(tr)
+
+        let deletbtn = document.createElement('button')
+        deletbtn.setAttribute("onclick", "deletedata("+id+")");
+        let btntext = document.createTextNode('x')
+        deletbtn.appendChild(btntext)
+        tr.appendChild(deletbtn)
+
+        let editbtn = document.createElement('button')
+        editbtn.setAttribute("onclick","editform()")
+        let edittext = document.createTextNode('E')
+        editbtn.appendChild(edittext)
+        tr.appendChild(editbtn)
+
     })
-
-    let final_bill;
-
-    final_bill = getdata.reduce((acc,v)=>acc + v.amount )
-    let tr2 = document.createElement('tr')
-
-    let td6 = document.createElement('td')
-    td6.setAttribute('colspan','3')
-    let td6txt = createTextNode('')
-    td6.appendChild(td6txt)
-    tr2.appendChild(td6)
-    parent.appendChild(tr2)
     }
     display();
+
+    const deletedata = (id) =>{
+        // console.log("deletee");
+
+        let reftr = document.getElementById('tr'+id);
+    
+        reftr.remove(); 
+
+        localStorage.removeItem('tr')
+       
+    }
+
+
+    // const editform = (obj) =>{
+    //     console.log('eeee');
+
+        // obj.
+
+                    
+        // let date = document.getElementById('date')
+        // let table = document.getElementById('table')
+        // let food = document.getElementById('food')
+        // let person = document.getElementById('person')
+
+
+        
+
+
+    // }
+    
 
 
     // if (date) {
