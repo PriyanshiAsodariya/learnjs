@@ -11,3 +11,71 @@
 #personErr{
     color: red;
 }
+.main_box{
+    /* background-image: url(../image/03.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center; */
+    /* border: 2px solid black; */
+    margin-left: 340px;
+    /* background-color: rgb(102, 102, 37);  */
+    width: 400px;
+    background-image: url(../image/hotel1.avif);
+    padding-left: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: rgba(255,255,255,0.4);
+    margin-top: 20px;
+}
+body{
+   
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* background-color: rgb(102, 102, 37); */
+   
+}
+input{
+    border-radius: 40px;
+    background-color: burlywood;
+}
+#table{
+    border-radius: 40px;
+    background-color: burlywood;
+}
+#food{
+    border-radius: 40px;
+    background-color: burlywood;
+}
+h1{
+    color: orange;
+    text-decoration: underline ;
+}
+h4{
+    color: white;
+}
+::placeholder{
+    color: black;
+}
+#box{
+    background-color:rgb(231, 197, 153,0.5);
+    /* color: whit; */
+    
+}
+#btn{
+    /* background-color: red; */
+}
+#submit{
+    background-color:white;
+    padding: 6px;
+    cursor: pointer;
+
+
+}
+#bill{
+    background-color: white;
+    
+}
+#button{
+    background-color: black;
+    color: white;
+}
+
