@@ -378,5 +378,36 @@ b.speak();
 
 //====================================
 
+//(abstraction)
+
+class worker{
+    name; 
+    salary;
+    age;
+
+    constructor(n,s,a){
+        this.name = n;
+        this.salary = s;
+        this.age = a;
+
+        this.getuserdetail = () =>{
+            console.log(this.name, this.age);
+            finalsalary();
+        }
+        let bonus = 500;
+        let finalsalary = () =>{
+            let final = salary + bonus;
+            console.log("final slary is :", final);
+
+        }
+    }
+}
+let e1 = new employee("priyanshi" , 20 , 100000);
+
+console.log(e1);
+
+//============================================
+
+
 
 
