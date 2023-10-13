@@ -48,47 +48,46 @@ const handlesubmit = () => {
     console.log(food);
 
 
-    // if (food === '0') {
-    //     document.getElementById('foodErr').innerHTML = 'select food'
-    // } else {
-    //     document.getElementById('foodErr').innerHTML = '';
-    //     foodE = false;
+    if (food === '0') {
+        document.getElementById('foodErr').innerHTML = 'select food'
+    } else {
+        document.getElementById('foodErr').innerHTML = '';
+        foodE = false;
     }
-    // let foodname;
-    //         let price;
+    let foodname;
 
-    //         if (food === '250') {
-    //             foodname = 'punjabi'
-    //         } else if (food === '150') {
-    //             foodname = 'chinese'
-    //         } else if (food === '200') {
-    //             foodname = 'south indian'
-    //         }
-    //         console.log(foodname);
+    if (food === 'panjabi') {
+        foodname = 'punjabi'
+    } else if (food === 'chinees') {
+        foodname = 'chinese'
+    } else if (food === 'south_indian') {
+        foodname = 'south indian'
+    }
+    console.log(foodname);
 
-          
 
-    //         if (food === '250') {
-    //             price = 250;
-    //         } else if (food === '150') {
-    //             price = 150;
-    //         } else if (food === '200') {
-            //     price = 200;
-            // }
-            // console.log(price);
+    let price;
+    if (food === 'panjabi') {
+        price = 250;
+    } else if (food === 'chinees') {
+        price = 150;
+    } else if (food === 'south_indian') {
+        price = 200;
+    }
+    console.log(price);
 
-            // let amount;
-            // amount = price * person;
-            // console.log(amount);
+    let amount;
+    amount = price * person;
+    console.log(amount);
 
 
 
     let getdata = JSON.parse(localStorage.getItem('hotel_data'));       //2
     console.log(getdata);
 
-    // if (dateE || personE || foodE || tableE) {
-    //     return false;
-    // } else {
+    if (dateE || personE || foodE || tableE) {
+        return false;
+    } else {
 
         if (update) {
             let obj = {
@@ -99,24 +98,22 @@ const handlesubmit = () => {
                 'person': person,
                 'amount': amount
             }
-            // let foodname;
-            // let price;
 
-            // if (food === 'panjabi') {
-            //     foodname = 'panjabi';
-            //     price = 250;
-            // } else if (food === 'chinees') {
-            //     foodname = 'chinees';
-            //     price = 150;
-            // } else if (food === 'south indian') {
-            //     foodname = 'southindian';
-            //     price = 200;
-            // }
-            // console.log(foodname);
+            if (food === 'panjabi') {
+                foodname = 'panjabi';
+                price = 250;
+            } else if (food === 'chinees') {
+                foodname = 'chinees';
+                price = 150;
+            } else if (food === 'south indian') {
+                foodname = 'southindian';
+                price = 200;
+            }
+            console.log(foodname);
 
-            // let amount;
-            // amount = price * person;
-            // console.log(amount);
+            let amount;
+            amount = price * person;
+            console.log(amount);
 
             console.log("update", obj);
             let index = getdata.findIndex((v) => v.id == update);
@@ -145,13 +142,10 @@ const handlesubmit = () => {
                 localStorage.setItem('hotel_data', JSON.stringify(getdata));
             }
         }
-        // return true;
+        return true;
 
-    // }
-
-
-
-// }
+    }
+}
 
 const deletedata = (id) => {
     // console.log("deletee");
