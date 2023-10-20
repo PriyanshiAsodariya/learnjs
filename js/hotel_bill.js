@@ -253,9 +253,6 @@ const display = () => {
 }
 display();
 
-
-
-
 const editform = (id) => {
     console.log(id);
 

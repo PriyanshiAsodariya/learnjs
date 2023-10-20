@@ -1,0 +1,188 @@
+.containor {
+    /* border: 2px solid black; */
+    width: 60%;
+    margin: auto;
+    /* padding: 30px; */
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 1px;
+    padding-bottom: 10px;
+    background-color: rgb(128, 128, 128, 0.3);
+}
+
+.com_box {
+    justify-content: space-evenly;
+    /* padding: 20px; */
+    display: flex;
+}
+
+.budget_box {
+    width: 68%;
+    margin-left: px;
+
+    padding: 20px;
+    font-family: sans-serif;
+    font-size: 20px;
+    /* padding-left: 20px;
+    padding-right: 20px; */
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0.6em 1.2em rgba(28, 0.08, 0.06, 0.5);
+}
+
+.exp_box {
+    width: 68%;
+    /* justify-content: space-evenly; */
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-left: 25px;
+    padding: 20px;
+    /* padding-bottom: 20px; */
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0.6em 1.2em rgba(28, 0.08, 0.06, 0.5);
+}
+
+input {
+    width: 95%;
+
+    padding: 4px;
+}
+
+.result_box {
+    margin-top: 20px;
+    padding-bottom: 3%;
+    display: flex;
+    /* padding: 10px; */
+    text-align: center;
+    font-family: sans-serif;
+    height: 100px;
+    color: white;
+    border-radius: 10px;
+    background-color: rgba(88, 126, 244, 0.9);
+
+}
+
+.total_budget {
+    width: 30%;
+
+}
+
+#set_button {
+    padding: 8px;
+    border-radius: 6px;
+    color: white;
+    background-color: rgba(88, 126, 244, 0.9);
+    padding-left: 8px;
+    padding-right: 8px;
+    font-family: sans-serif;
+    border: solid rgba(88, 126, 244, 0.9);
+}
+
+.expense {
+    width: 30%;
+    height: 70px;
+    /* border: 2px solid red; */
+    margin-left: 42px;
+
+}
+
+#check_button {
+    padding: 8px;
+    border-radius: 6px;
+    font-family: sans-serif;
+    color: white;
+    background-color: rgba(88, 126, 244, 0.9);
+    border: solid rgba(88, 126, 244, 0.9);
+}
+
+.balance {
+    width: 30%;
+    height: 70px;
+    /* border: 2px solid red;  */
+    margin-left: 42px;
+}
+
+.expense_list {
+    background-color: white;
+    width: 99%;
+    margin-top: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    font-family: sans-serif;
+    box-shadow: 0 0.6em 1.2em rgba(28, 0.08, 0.06, 0.5);
+
+    /* border: 2px solid yellow; */
+}
+
+h1 {
+    text-align: center;
+    color: black;
+    font-family: sans-serif;
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    /* text-decoration: underline; */
+    color: rgba(88, 126, 244);
+}
+
+h4 {
+    font-size: 19px;
+}
+
+.error {
+    color: red;
+}
+
+#span_total {
+    /* padding-bottom: px; */
+    font-size: 28px;
+}
+
+#span_exp {
+    font-size: 28px;
+}
+
+#span_bal {
+    font-size: 28px;
+}
+
+.span_total {
+
+    font-size: 28px;
+}
+
+.span_bal {
+
+    font-size: 28px;
+}
+
+.span_exp {
+
+    font-size: 28px;
+}
+
+#spanname {
+    margin-right: 250px;
+    width: 30%;
+
+}
+#spanval {
+    margin-right: 280px;
+    /* display: inline-block; */
+    width: 30%;
+}
+
+#button {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: rgba(88, 126, 244);
+    color: white;
+    /* padding: 3px; */
+    border: rgba(88, 126, 244);
+}
+
+#buttonD {
+    background-color: rgba(88, 126, 244);
+    color: white;
+    border: rgba(88, 126, 244);
+}

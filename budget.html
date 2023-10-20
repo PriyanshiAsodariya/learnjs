@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/budget.css">
+</head>
+
+<body>
+  
+    <div class="containor">
+        <h1>Budget  Application</h1>
+        <div class="com_box">
+            <div class="budget_box">
+                <form id="budget-form" >
+                    <h3>Budget</h3>
+                    <input type="number" id="budget_amt" name="budget_amt" placeholder="Enter total amount">
+                    <span id="budgetErr" class="error"></span>
+                    <br><br>
+                    <button type="submit" id="set_button" >Set Budget</button>
+                </form>
+            </div>
+
+            <div class="exp_box">
+                <form id="expense-form">
+                    <h3>Expense</h3>
+
+                    <input type="text" id="exp_name" name="exp" placeholder="Enter your expense">
+                    <span id="expense_nameErr" class="error"></span>
+                    <br><br>
+                    <input type="number" id="exp_amt" name="exp_amt" placeholder="Enter your expense amount">
+                    <span id="expense_valErr" class="error"></span>
+                    <br><br>
+                    <button type="submit" id="check_button">Check Amount</button>
+                </form>
+            </div>
+        </div>
+        <div class="result_box">
+            <div class="total_budget">
+                <h4>Total Budget</h4>
+                <span class="span_total">$</span>
+                <span id="span_total">0</span>
+            </div>
+            <div class="expense">
+                <h4>Expense</h4>
+                <span class="span_exp">$</span>
+                <span  id="span_exp">0</span>
+            </div>
+            <div class="balance">
+                <h4>Balance</h4>
+                <span class="span_bal">$</span>
+                <span  id="span_bal">0</span>
+            </div>
+        </div>
+        <div class="expense_list">
+            <h3>Expense list</h3>    
+            <ul id="ul-exp">
+                
+            </ul>
+
+            
+           
+        </div>
+    </div>
+
+    <script src="js/budget.js"></script>
+
+</body>
+
+</html>
