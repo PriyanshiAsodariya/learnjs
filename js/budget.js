@@ -38,9 +38,6 @@ class Budget {
 
 
         if (localBudget != 0 && localBudget !== null) {
-            console.log(localBudget)
-            console.log("okkk");
-
             let amount;
 
             if (localexpense) {
@@ -63,7 +60,7 @@ class Budget {
             localStorage.setItem("expense", JSON.stringify(expensedata))
 
             let balancedata = budgetval - expensedata;
-            console.log(balancedata);
+            console.log(balancedata);   
             localStorage.setItem("Balance", JSON.stringify(balancedata))
 
             this.balance.innerHTML = balancedata;
