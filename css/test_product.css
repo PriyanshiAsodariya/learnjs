@@ -1,0 +1,40 @@
+#parent_div{
+    display: flex;
+    position: relative;
+   
+    
+}
+.box{
+    margin-right:70px;
+    /* position: absolute; */
+    /* margin-top: 30px; */
+    
+}
+.fa-solid{
+    /* color: red; */
+}
+.li{
+    /* justify-content: center; */
+}
+.id{
+    border: 2px solid black;
+}
+#parent_div{
+    /* border: 2px solid black;  */
+    width:300px;
+    border-radius: 5px;
+    margin-left: 40px ;
+    padding: 10px;
+    background-color:hsl(160, 100%, 75%, 0.5) ; 
+}
+
+#display_product{
+    /* border: 2px solid black; */
+    width: 100px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 40px;
+    display: none ;
+    /* padding: 20px; */
+    background-color: hsl(160, 100%, 75%, 0.5) ;
+}
