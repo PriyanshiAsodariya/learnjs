@@ -72,36 +72,5 @@ function handlesubmit() {
         document.getElementById('ans').innerHTML = grade;
         return false;
     }
-
-
-
-    // let total;
-
-    // total = maths + science + chemstry;
-
-    // console.log("total marks is:", total);
-
-    // let per;
-
-    // per = total / 3;
-
-    // console.log("per is:", per);
-    
-    // let grade;
-    // if (per > 80) {
-    //     console.log("grade A");
-    //     grade = A;
-    // } else if (per > 70) {
-    //     console.log("grade B");
-    //     grade = B;
-    // } else if (per > 50) {
-    //     console.log("grade C");
-    //     grade = C;
-    // } else {
-    //     console.log("grade D");
-    //     grade = D;
-    // }
-
-    // document.getElementById('ans').innerHTML = grade;
     return false;
 }

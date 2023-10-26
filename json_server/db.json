@@ -1,24 +1,16 @@
 {
-  "posts": [
+  "student": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "roll_no": 22,
+      "name": "priyanshi",
+      "fees": 5000,
+      "id": 26
     },
     {
-      "id": 3,
-      "title": "demo",
-      "author": "priyanshi"
+      "roll_no": 1,
+      "name": "shruti",
+      "fees": 7777,
+      "id": 27
     }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
