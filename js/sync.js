@@ -97,3 +97,76 @@
 // console.log("i am in the programme: ");
 
 //--------------------------------------
+
+
+//Callback hell
+
+// const firstfun = (a,callback) =>{
+//     setTimeout(function(){
+//         console.log("first function");
+//         callback(a+5);
+//     },1000)
+
+// }
+
+// const secondfun = (a,callback) =>{
+//     setTimeout(function(){
+//         console.log("second function");
+//         callback(a*2);
+//     },1000)
+// }
+// const thirdfun = (a,callback) =>{
+//     setTimeout(function(){
+//         console.log("third function");
+//         callback(a - 5);
+//     },1000)
+// }
+
+// firstfun(10,function(r1){
+//     console.log(r1);
+//     secondfun(r1,function(r2){
+//         console.log(r2);
+//         thirdfun(r2,function(r3){
+//             console.log(r3);
+//         })
+
+//     })
+
+// });
+
+//----------------------------------------
+
+//callback hell solution by promise
+
+const firstfun = (a) => {
+    return new Promise((resolve, reject) => {
+        setTimeout(function () {
+            console.log("first function");
+            resolve(a + 5);
+        }, 1000)
+    })
+}
+
+const secondfun = (a) => {
+    return new Promise((resolve, reject) => {
+        setTimeout(function () {
+            console.log("second function");
+            resolve(a * 2);
+        }, 1000)
+    })
+}
+const thirdfun = (a) => {
+    return new Promise ((resolve, reject) => {
+        setTimeout(function () {
+            console.log("third function");
+            resolve(a - 10);
+        }, 1000)
+    })
+}
+
+firstfun(10)
+    .then((r1) => secondfun(r1))
+    .then((r2) => thirdfun(r2))
+    .then((r3)=> console.log(r3))
+
+//------------------------------------------

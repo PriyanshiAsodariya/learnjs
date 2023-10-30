@@ -39,7 +39,7 @@ input{
     justify-content: center;
     margin-left: 500px;
    
-    margin-top: 20px;
+    margin-top: 30px;
     position: fixed;
 }
 .containor{
@@ -47,5 +47,16 @@ input{
     display: flex;
     flex-wrap: wrap;
     width: 95%;
+    margin-top: 50px;
 
+}
+#select{
+    padding: 6px;
+    width: 180px;
+    margin-left: 300px;
+    position: fixed;
+
+}
+.img{
+    /* margin-top: 20px; */
 }

@@ -7,16 +7,23 @@
     <link rel="stylesheet" href="css/product_api.css">
 </head>
 <body>
-    <input onkeyup="handleSearch()" type="search" name="search" placeholder="search..."><br><br>
+    <input onkeyup="handleSearch()" id="search" type="search" name="search" placeholder="search..."><br><br>
+    <select name="select" id="select">
+        <option value="sel">--select--</option>
+        <option value="a">--A to Z--</option>
+        <option value="z">--Z to A--</option>
+        <option value="high">--price high to low--</option>
+        <option value="low">price low to high</option>
+    </select>
+
 
     <div  id="main_box" class="main_box">
 
     </div>
 
-    <div id="result">
+    
 
-    </div>
-
+    
   
 
     <script src="js/product_api.js">
